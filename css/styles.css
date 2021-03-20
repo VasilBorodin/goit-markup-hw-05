@@ -325,6 +325,7 @@ img {
   padding-top: 47px;
   padding-bottom: 94px;
 }
+
 .study-section .study {
   display: block;
   margin-bottom: 50px;
@@ -335,19 +336,34 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.study-img {
+.study-section-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
+
 .study-section-img {
   flex-basis: calc((100%-60px) / 3);
   margin-right: 30px;
 }
-
-.study-list {
-  display: block;
+.image-cover {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
+
 /* ===============END STUDY-SECTION=============== */
 
 /* ===============STUDY-TEAM=============== */
