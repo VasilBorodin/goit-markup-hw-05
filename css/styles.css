@@ -341,19 +341,19 @@ img {
   justify-content: space-between;
 }
 
-.study-section-img {
+.study-img {
+  position: relative;
   flex-basis: calc((100%-60px) / 3);
   margin-right: 30px;
 }
 .image-cover {
-  /* position: absolute; */
+  position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   height: 70px;
   width: 100%;
+  padding: 27px;
   background-color: rgba(47, 48, 58, 0.8);
   color: #ffffff;
   font-weight: 700;
@@ -446,7 +446,7 @@ img {
 }
 .social-list-icon {
   fill: currentColor;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-card-list:hover .team-card-list-link,
 .team-card-list:focus .team-card-list-link {
@@ -479,6 +479,7 @@ img {
   left: 215px;
   top: 2401px;
 }
+
 .clients-link {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -504,8 +505,14 @@ img {
   cursor: pointer;
 }
 
+.clients-link-nav {
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .clients-link-icon {
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ===============END REGULAR CUSTOMERS=============== */
 
@@ -532,7 +539,6 @@ img {
   display: block;
   padding-top: 20px;
   width: 231px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subtitle-text {
   margin-top: 10px;
@@ -545,6 +551,7 @@ img {
   line-height: 1, 71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-address-link:hover,
 .navigation-address-link:focus {
@@ -565,6 +572,7 @@ img {
   line-height: 1, 14;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link-nav:hover,
 .navigation-link-nav:focus {
@@ -578,6 +586,7 @@ img {
   line-height: 1, 14;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-link-nav:hover,
 .tel-link-nav:focus {
